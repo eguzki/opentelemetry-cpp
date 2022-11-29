@@ -27,7 +27,7 @@
 
 if(OTELCPP_PROTO_PATH)
   message(STATUS "OTELCPP_PROTO_PATH = " ${OTELCPP_PROTO_PATH})
-  file(READ ${OTELCPP_PROTO_PATH}/opentelemetry/proto/common/v1/common.proto) MYCONTENT)
+  file(READ ${OTELCPP_PROTO_PATH}/opentelemetry/proto/common/v1/common.proto MYCONTENT)
   message(STATUS "content = " ${MYCONTENT})
   if(EXISTS(${OTELCPP_PROTO_PATH}/opentelemetry/proto/common/v1/common.proto))
     message(STATUS "OTELCPP_PROTO_PATH points to a opentelemetry-proto repository")
