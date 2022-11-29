@@ -26,6 +26,7 @@
 #
 
 if(OTELCPP_PROTO_PATH)
+  message(STATUS "OTELCPP_PROTO_PATH = " ${OTELCPP_PROTO_PATH})
   if(NOT EXISTS(${OTELCPP_PROTO_PATH}/opentelemetry/proto/common/v1/common.proto))
     message(FATAL_ERROR "OTELCPP_PROTO_PATH does not point to a opentelemetry-proto repository")
   endif()
